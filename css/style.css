@@ -128,6 +128,28 @@ main {
 }
 
 .main-form {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
     height: 550px;
     background-color: rgba(0, 0, 0, 0.6);
+}
+
+.main-form form {
+    color: #ccc;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.input-field {
+    font-size: .7em;
+    background-color: #0f0f0f;
+    border: 0;
+    height: 35px;
+    width: 276px;
+
 }

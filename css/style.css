@@ -128,6 +128,7 @@ main {
 }
 
 .main-form {
+    color: #ccc;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -154,26 +155,44 @@ main {
 }
 
 .main-form form {
-    color: #ccc;
     height: 390px;
     display: flex;
     flex-flow: column;
+    /*align-items: center;*/
+    /*justify-content: flex-start;*/
+    margin: 29px 0 20px;
+}
+
+.form-chackbox {
+    display: flex;
     align-items: center;
-    justify-content: flex-start;
-    margin: 26px 0 20px;
+    margin: 2px 0 25px;
+    font-size: .95em;
+}
+
+.form-chackbox span {
+    padding-left: 9px;
+}
+
+.submit-button {
+    align-self: center;
 }
 
 .input-field {
     color: #fff;
     font-size: .8em;
     background-color: #0f0f0f;
-    border: 0;
+    border: none;
+    border-bottom: 1px solid #474847;
     height: 35px;
     width: 258px;
     padding-left: 18px;
-    margin-bottom: 17px;
+    margin-bottom: 16px;
 }
 
 .input-field:focus {
-  
+    outline: none;
+    border-bottom: 1px solid #689bcc;
+    box-shadow: 0 0 10px 2px #689bcc , inset 0px 0px 7px #1e4b76;
+    background-color: #1b5288;
 }

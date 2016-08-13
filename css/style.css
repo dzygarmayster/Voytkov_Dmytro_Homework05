@@ -16,28 +16,27 @@
 
 html,
 body {
-  width: 100%;
-  height: 100%;
-  min-width: 900px;
-  min-height: 900px;
+    width: 100%;
+    min-width: 900px;
+    height: 100%;
+    min-height: 900px;
 }
 
 body {
-    font-family: 'Helvetica';
     display: flex;
     flex-direction: column;
     background: url('../img/bg2.jpg') no-repeat 55% 30%;
-    /*background-size: cover;*/
+    font-family: 'Helvetica';
 }
 
 /*=====================HEADER SECTION=======================*/
 
 header {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
-    background-color: #08599c;
+    justify-content: flex-end;
     padding-right: 20px;
+    background-color: #08599c;
 }
 
 .first-menu-group,
@@ -48,12 +47,12 @@ header {
 
 header div a {
     display: block;
+    padding: 10px 12px;
+    color: #60b5ed;
     font-size: .85em;
     letter-spacing: 1px;
-    color: #60b5ed;
-    text-decoration: none;
     text-align: center;
-    padding: 10px 12px;
+    text-decoration: none;
     white-space: nowrap;
 }
 
@@ -63,16 +62,17 @@ header div a {
 }
 
 .second-menu-group a:hover {
-    background: linear-gradient(to bottom, #51b1dc 0%,#2e7ac4 100%);
-    color: #fff;
-    border: 1px solid #479bd4;
     padding: 9px 11px;
-}
-.second-menu-group .flag-block a:hover {
-    background: linear-gradient(to bottom, #51b1dc 0%,#2e7ac4 100%);
-    color: #fff;
     border: 1px solid #479bd4;
+    background: linear-gradient(to bottom, #51b1dc 0%, #2e7ac4 100%);
+    color: #fff;
+}
+
+.second-menu-group .flag-block a:hover {
     padding: 5px 18px 6px;
+    border: 1px solid #479bd4;
+    background: linear-gradient(to bottom, #51b1dc 0%, #2e7ac4 100%);
+    color: #fff;
 }
 
 .second-menu-group u {
@@ -104,10 +104,10 @@ header div a {
 /*=====================MAIN SECTION=======================*/
 
 main {
-    height: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 .form-container {
@@ -123,50 +123,48 @@ main {
     align-items: center;
     justify-content: center;
     height: 60px;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, .6);
     color: #fff;
 }
 
 .main-form {
-    color: #ccc;
     display: flex;
     flex-flow: column;
     align-items: center;
     height: 550px;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, .6);
+    color: #ccc;
 }
 
 .facebook-button {
-  margin: 37px 0 25px;
+    margin: 37px 0 25px;
 }
 
 .main-form .separator {
-    width: 276px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 276px;
     color: #8e8f8e;
 }
 
 .separator-line {
     width: 122px;
     border-bottom: 1px solid #666;
-    box-shadow: 0px 1px #000;
+    box-shadow: 0 1px #000;
 }
 
 .main-form form {
-    height: 390px;
     display: flex;
     flex-flow: column;
-    /*align-items: center;*/
-    /*justify-content: flex-start;*/
-    margin: 29px 0 20px;
+    height: 338px;
+    margin: 27px 0 16px;
 }
 
 .form-chackbox {
     display: flex;
     align-items: center;
-    margin: 2px 0 25px;
+    margin: 2px 0 20px;
     font-size: .95em;
 }
 
@@ -179,20 +177,36 @@ main {
 }
 
 .input-field {
+    width: 258px;
+    height: 35px;
+    margin-bottom: 16px;
+    padding-left: 18px;
+    border: 0;
+    border-bottom: 1px solid #474847;
+    background-color: #0f0f0f;
     color: #fff;
     font-size: .8em;
-    background-color: #0f0f0f;
-    border: none;
-    border-bottom: 1px solid #474847;
-    height: 35px;
-    width: 258px;
-    padding-left: 18px;
-    margin-bottom: 16px;
 }
 
 .input-field:focus {
-    outline: none;
     border-bottom: 1px solid #689bcc;
-    box-shadow: 0 0 10px 2px #689bcc , inset 0px 0px 7px #1e4b76;
+    outline: none;
     background-color: #1b5288;
+    box-shadow: 0 0 10px 2px #689bcc , inset 0 0 7px #1e4b76;
+}
+
+.main-form form button {
+    align-self: center;
+    width: 150px;
+    height: 36px;
+    border: 1px solid #5ba4df;
+    border-radius: 3px;
+    background: linear-gradient(to bottom, #50aedb 0%, #2e7ac4 100%);
+    color: #fff;
+    font-size: .9em;
+}
+
+.main-form p {
+    color: #ccc;
+    font-size: .735em;
 }

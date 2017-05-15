@@ -19,13 +19,12 @@ body {
     width: 100%;
     min-width: 900px;
     height: 100%;
-    min-height: 900px;
+    min-height: 700px;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    background: url('../img/bg2.jpg') no-repeat 55% 30%;
+    background: url('../img/bg2.jpg');
+    background-size: cover;
     font-family: 'Helvetica';
 }
 
@@ -35,6 +34,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    height: 36px;
     padding-right: 20px;
     background-color: #08599c;
 }
@@ -53,7 +53,6 @@ header div a {
     letter-spacing: 1px;
     text-align: center;
     text-decoration: none;
-    white-space: nowrap;
 }
 
 .first-menu-group a:hover {
@@ -104,61 +103,69 @@ header div a {
 /*=====================MAIN SECTION=======================*/
 
 main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 100%;
+    text-align: center;
+}
+
+.valign-after::after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }
 
 .form-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: inline-block;
     width: 560px;
     height: 612px;
+    vertical-align: middle;
 }
 
 .form-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 60px;
+    margin-bottom: 3px;
     background-color: rgba(0, 0, 0, .6);
     color: #fff;
 }
 
+.form-header h2 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
 .main-form {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
     height: 550px;
+    padding-top: 36px;
     background-color: rgba(0, 0, 0, .6);
     color: #ccc;
 }
 
 .facebook-button {
-    margin: 37px 0 25px;
+    margin: 0 0 25px;
+    vertical-align: middle;
 }
 
 .main-form .separator {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: inline-block;
     width: 276px;
     color: #8e8f8e;
+    vertical-align: middle;
 }
 
 .separator-line {
+    display: inline-block;
     width: 122px;
     border-bottom: 1px solid #666;
     box-shadow: 0 1px #000;
+    vertical-align: middle;
 }
 
 .main-form form {
-    display: flex;
-    flex-flow: column;
+    display: inline-block;
+    width: 280px;
     height: 338px;
     margin: 27px 0 16px;
+    vertical-align: middle;
 }
 
 .form-chackbox {
@@ -169,7 +176,7 @@ main {
 }
 
 .form-chackbox span {
-    padding-left: 9px;
+    display: inline-block;
 }
 
 .submit-button {
@@ -209,4 +216,5 @@ main {
 .main-form p {
     color: #ccc;
     font-size: .735em;
+    vertical-align: middle;
 }

@@ -147,11 +147,55 @@ main {
     color: #ccc;
 }
 
+/*===================== FACEBOOK-BUTTON =======================*/
+
 .facebook-button {
     display: inline-block;
+    width: 276px;
+    height: 35px;
     margin: 36px 10px 25px;
+    box-shadow: inset 0px 1px 0px 0px rgba(119,136,182,1);
+    background: linear-gradient(to bottom, rgb(62, 87, 153) 0%, rgb(51, 64, 108) 100%);
+    border-radius: 3px;
+    font-size: 0;
+    color: #fff;
+    text-align: left;
+}
+
+.facebook-icon {
+    display: inline-block;
+    width: 36px;
+    height: 35px;
+    font-size: 1.4rem;
+    box-shadow: inset -1px 0px 0px 0px rgba(33,60,113,1);
+    text-align: center;
+}
+
+.facebook-icon i {
     vertical-align: middle;
 }
+
+.facebook-text {
+    display: inline-block;
+    width: 205px;
+    height: 35px;
+    color: #fff;
+    font-size: 1.02rem;
+    text-align: center;
+}
+
+.facebook-text span {
+    vertical-align: middle;
+}
+
+.facebook-arrow {
+    display: inline-block;
+    height: 35px;
+    font-size: .7rem;
+    text-align: center;
+}
+
+/*===================== END of FACEBOOK-BUTTON =======================*/
 
 .main-form .separator {
     display: inline-block;
